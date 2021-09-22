@@ -8,11 +8,11 @@ import { AuthModule } from './auth/auth.module';
   imports: [    
     TasksModule,
     TypeOrmModule.forRoot({
-      type:'postgres',
+      type:'mysql',
       host:'localhost',
-      port: 5432,
-      username: 'postgres',
-      password:'mysecretpassword',
+      port: 3306,
+      username: 'root',
+      password:'root',
       database:'task-management',
       autoLoadEntities: true,
       synchronize: true
