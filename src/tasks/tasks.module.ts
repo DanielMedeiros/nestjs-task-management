@@ -6,7 +6,7 @@ import { TasksController } from './tasks.controller';
 import { TasksService } from './tasks.service';
 
 @Module({
-  imports:[
+  imports:[  
     AuthModule,
     TypeOrmModule.forFeature([TaskRepository])
   ],
